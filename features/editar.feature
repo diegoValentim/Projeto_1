@@ -8,6 +8,6 @@
 		
 		Dado que esteja no site ORANGEHRM
 		Quando Logar no site ORANGEHRM
-		Então Consultar empregado cadastrado
-		Mas editar novo empregado
-		E validar se alteração efetuado ok
+		Quando Consultar empregado cadastrado
+		Quando editar novo empregado
+		Então validar se alteração efetuado ok

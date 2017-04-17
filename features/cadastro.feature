@@ -8,5 +8,5 @@ Validar login com perfil ADMIN e cadastrar um novo empregado
 Cenario: Cadastro de empregado
 Dado que esteja no site ORANGEHRM
 Quando Logar no site ORANGEHRM
-E cadastrar novo empregado
+Quando cadastrar novo empregado
 Então validar se cadastro efetuado ok

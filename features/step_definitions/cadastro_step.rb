@@ -9,17 +9,16 @@ Quando(/^Logar no site ORANGEHRM$/) do
 end
 
 Quando(/^cadastrar novo empregado$/) do
-  	find(:xpath, '//*[@id="menu_pim_viewPimModule"]').click 
-	find(:xpath, '//*[@id="menu_pim_addEmployee"]').click
+  	click_link('menu_pim_viewPimModule') 
+    click_link('menu_pim_addEmployee')
 	fill_in('firstName', :with => 'joao')
-  	fill_in('middleName', :with => 'admin')
-  	fill_in('lastName', :with => 'admin')
+  	fill_in('middleName', :with => 'silva')
+  	fill_in('lastName', :with => 'sauro')
     check('chkLogin')
-      fill_in('user_name', :with => 'diegoValentim')
+      fill_in('user_name', :with => 'diegosilva')
     select('Disabled', :from => 'status')
-        attach_file('photofile', 'C:/Users/Inmetrics/Downloads/mind_map_modelo_aprendizado.png')
+        attach_file('photofile', 'C:/Users/Inmetrics/exercicio_1/imagem.jpg')
   	click_button('btnSave')
-
 end
 
 Então(/^validar se cadastro efetuado ok$/) do

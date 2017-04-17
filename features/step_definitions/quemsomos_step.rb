@@ -11,7 +11,7 @@ Dado(/^Acessar o site Inmetrics$/) do
 end                                                                            
                                                                                
 Quando(/^Estiver no site da Inmetrics clicar na aba Quem Somos$/) do           
-   find(:xpath, '//*[@id="menu-item-2960"]/a/span/span').click 
+   find(:xpath, '//*[@id="menu-item-2960"]/a/span/span').click
 end                                                                            
                                                                                
 Então(/^validar campo MAIS DE (\d+) ANOS DE ATUAÇÃO$/) do |arg1|               

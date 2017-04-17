@@ -1,14 +1,14 @@
 Então(/^Consultar empregado cadastrado$/) do
-  	find(:xpath, '//*[@id="menu_pim_viewPimModule"]').click
-  	 	fill_in('empsearch_employee_name_empName', :with => 'diego valentim rocha')
+  	click_link('menu_pim_viewPimModule') 
+  	 	fill_in('empsearch_employee_name_empName', :with => 'joao silva sauro')
   	click_button('searchBtn')
 end
 
 Então(/^editar novo empregado$/) do
-  	find(:xpath, '//*[@id="resultTable"]/tbody/tr/td[3]/a').click
-	find(:xpath, '//*[@id="btnSave"]').click
-	fill_in('personal_txtEmpFirstName', :with => 'joao')
-	find(:xpath, '//*[@id="btnSave"]').click
+  	click_on('joao silva')
+	click_button('btnSave')
+	fill_in('personal_txtEmpFirstName', :with => 'alterado')
+	click_button('btnSave')
 end
 
 Então(/^validar se alteração efetuado ok$/) do

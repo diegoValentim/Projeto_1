@@ -1,6 +1,6 @@
 #language: pt
 #utf-8
-
+@piloto
 Funcionalidade: Quem Somos
 	Validar texto na aba Quem somos do site da inmetrics
 
