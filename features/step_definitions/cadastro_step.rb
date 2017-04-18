@@ -16,7 +16,7 @@ Quando(/^cadastrar novo empregado$/) do
   	fill_in('lastName', :with => 'sauro')
     check('chkLogin')
       fill_in('user_name', :with => 'diegosilva')
-    select('Disabled', :from => 'status')
+    select('Enabled', :from => 'status')
         attach_file('photofile', 'C:/Users/Inmetrics/exercicio_1/imagem.jpg')
   	click_button('btnSave')
 end
